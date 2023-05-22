@@ -1,0 +1,17 @@
+L14: 
+==> arr = readLine().split(" ");
+==> RHS 
+==> [ '2', '1', '3', '4', '5', '10' ]
+==> arr = [ '2', '1', '3', '4', '5', '10' ];
+==> go to line L15
+
+L15:
+==> rotationtimes = parseInt(readLine());
+==> RHS 
+==> parseInt(readLine());
+==> "1"
+==> 1
+==> rotationtimes = 1;
+==> go to line L17
+
+L17:
