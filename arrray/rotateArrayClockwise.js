@@ -17,7 +17,18 @@ function readLine() {
 let arr = readLine().split(" ");
 // If rotation > size of array
 // because there  will come a time when array rotation starts repeting itself.
-let rotationtimes = parseInt(readLine())%arr.length;
+let arrLength = arr.length;
+let rotationFrequency = parseInt(readLine())%arrLength;
+
+
+for(let index=0; index<arrLength; index++){
+    (index<rotationFrequency)?console.log(arr[arrLength+index-rotationFrequency]):console.log(arr[index-rotationFrequency]);
+}
+
+
+
+
+
 
 // Brute Force 
 // for (let i =0; i< rotationtimes; i++){
@@ -28,30 +39,6 @@ let rotationtimes = parseInt(readLine())%arr.length;
 //     }
 //    console.log(arr);
 // }
-function RightRotate(a, n, k)
-{
-  
-    // If rotation is greater
-    // than size of array
-    k = k % n;
-  
-    for (let i = 0; i < n; i++) {
-        if (i < k) {
-  
-            // Printing rightmost
-            // kth elements
-            console.log(a[n + i - k]);
-        }
-        else {
-  
-            // Prints array after
-            // 'k' elements
-            console.log((a[i - k]));
-        }
-    }
-    
-}
 
-RightRotate(arr, arr.length, rotationtimes);
   
 
