@@ -10,22 +10,17 @@ function readLine() {
 
 // -------- Do NOT edit anything above this line ----------
 // Use readLine() for taking input, it will read one line of from the input  and is stored in string format
+/**
+ *   odd Array         -- no of folds
+ * [-1, 4, 2, 3, 1] -- 0
+ * [0, 7, 2] -- 1
+ * [2,7] -- 2
+ * [9] -- 3
+ * 
+ * even array        -- no of folds
+ * [ 3, 1, 6, 7, 2, 3 ] -- 0
+ * [6,2,13] -- 1
+ * [19,2] --2
+ * [21] -- 3
+ */
 
-let arrayLength = parseInt(readLine());
-let arr = [];
-for (let j=0; j<arrayLength; j++){
-    arr[j] = parseInt(readLine());
-}
-let noOfFolds = parseInt(readLine());
-let outputArr = [];
-
-for(let i = 0; i<arr.length; i++){
-    outputArr[i] = arr.shift() + arr.pop();
-    if(arrayLength%2 !== 0){
-        outputArr[outputArr.length] = arr[0];
-    }
-    
-}
-
-console.log(outputArr.length);
-console.log(outputArr);
