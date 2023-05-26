@@ -33,4 +33,9 @@ for (let i =0; i<arrlen; i++){
         console.log(arr[i]);
         break;
     }
+    console.log(noOfCount);
+    if(noOfCount === 0){
+        console.log(parseInt(-1));
+        break;
+    }
 }
