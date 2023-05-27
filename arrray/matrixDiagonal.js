@@ -12,25 +12,22 @@ function readLine() {
 // Use readLine() for taking input, it will read one line of from the input  and is stored in string format
 
 let matrixRows = parseInt(readLine());
+
 let matrix = [];
-
 for (let i =0; i<matrixRows; i++){
-    matrix[i] = readLine().split(" ");
+    matrix[i] = readLine().split(" ").map(Number);
 }
 
-let matrixColumns = matrix[0].length;
-
-let transposedMatrix = [];
-
-for (let column=0; column<matrixColumns; column++){
-    let newRows = [];
-    for(let row=0;row<matrixRows; row++){
-        newRows[row] = matrix[row][column];
+for(let j =0; j<matrix.length; j++){
+    for(let k=0; k<matrix[j].length; k++){
+        if(j==k){
+            if(matrix[j][k] < 0){
+                matrix[j][k] = 0;
+            }
+            else if(matrix[j][k] >= 0){
+                matrix[j][k] = 1;
+            }
+        }
     }
-    transposedMatrix[column] = newRows;
+    console.log(matrix[j].join(" "));
 }
-
-
-
-
-console.log(transposedMatrix);
