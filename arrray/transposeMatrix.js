@@ -27,10 +27,11 @@ for (let column=0; column<matrixColumns; column++){
     for(let row=0;row<matrixRows; row++){
         newRows[row] = matrix[row][column];
     }
-    transposedMatrix[column] = newRows;
+    // transposedMatrix[column] = newRows;
+    console.log(newRows.join(" "));
 }
 
 
 
 
-console.log(transposedMatrix);
+// console.log(transposedMatrix);
