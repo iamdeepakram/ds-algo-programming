@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta - Child of head tag  -->
+        <title>Css Fundamental</title>
+        <meta name="description" content="this is html page." >
+        <!-- href - hyper reference  -->
+        <!-- rel - relation to current document -->
+        <link rel="stylesheet" href="assets/css/style.css" >
+        <!-- style - on same page styling holding css code in html page -->
+        <style>
+            h6{
+                color:bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- A page can contain recommended only one head tag -->
+        <h1>I am page heading.</h1>
+        <hr>
+        <h6>I am smallest page heading</h6>
+        <hr/>
+        <!-- Only a seperation container  -->
+        <!-- div is full width container  -->
+        <h2>Things to learn</h2>
+        <!-- UL - creates container to create list -->
+        <!-- every browser have there own default stylesheet -->
+        <ul type="circle">
+            <!-- can set type to -> circle , default, other mentioned conventions -->
+            <li class="list-tem">HTML
+                <ul>
+                    <li class="list-tem">Basics of HTML</li>
+                    <li class="list-tem">Paragraph</li>
+                    <li class="list-tem">Heading</li>
+                </ul>
+            </li>
+            <li class="list-tem">CSS</li>
+            <li class="list-tem">JS</li>
+        </ul>
+        <hr/>
+        <h2>Ordered List</h2>
+        <h4>Ranking</h4>
+        <!-- if you wanted the list to start from 'g' use start attribute-->
+        <ol type="a" start="7" >
+            <!-- can set type to below values
+            'a' indicates lowercase letters,
+            'A' indicates uppercase letters,
+            'i' indicates lowercase Roman numerals,
+            'I' indicates uppercase Roman numerals,
+            and '1' indicates numbers (default). -->
+            <li class="list-tem">Bob</li>
+            <li class="list-tem">Max</li>
+            <li class="list-tem">Georg</li>
+            <li class="list-tem">Testing</li>
+              <li class="list-tem">Bob</li>
+            <li class="list-tem">Max</li>
+            <li class="list-tem">Georg</li>
+            <li class="list-tem">Testing</li>
+              <li class="list-tem">Bob</li>
+            <li class="list-tem">Max</li>
+            <li class="list-tem">Georg</li>
+            <li class="list-tem">Testing</li>
+              <li class="list-tem">Bob</li>
+            <li class="list-tem">Max</li>
+            <li class="list-tem">Georg</li>
+            <li class="list-tem"  id="unique" >Testing</li>
+              <li class="list-tem">Bob</li>
+            <li class="list-tem">Max</li>
+            <li class="list-tem">Georg</li>
+            <li class="list-tem">Testing</li>
+              <li class="list-tem">Bob</li>
+            <li class="list-tem">Max</li>
+            <li class="list-tem">Georg</li>
+            <li class="list-tem">Testing</li>
+              <li class="list-tem">Bob</li>
+            <li class="list-tem">Max</li>
+            <li class="list-tem">Georg</li>
+            <li class="list-tem">Testing</li>
+        </ol>
+        <hr/>
+        <h2>Definition List</h2>
+        <dl>
+            <!-- dt is term  -->
+            <dt>HTML</dt> 
+            <!-- dd is term definition. -->
+            <dd>HTML is Structure language used for web development purposes.</dd>
+              <!-- dt is term  -->
+            <dt>CSS</dt> 
+            <!-- dd is term definition. -->
+            <dd class="second-dd" >CSS is Styling language used for web development purposes.</dd>
+              <!-- dt is term  -->
+            <dt class="second-dd" >JS</dt> 
+            <!-- dd is term definition. -->
+            <dd>JS is Scripting language used for web development purposes.</dd>
+        </dl>
+        <hr/>
+        <h2>Link | Hyperlink | Anchor Tag</h2>
+        <!-- kills previous page and opens the new url page  -->
+        <a href="https://github.com/" >Redirect to Github</a> 
+        <!-- open link in new tab of browser. -->
+        <a href="https://github.com/" target="_blank" >Redirect to Github</a> 
+        <hr/>
+        <div class="row" >
+            row 1 
+            <div class="column" >
+                column 1 
+            </div>
+            <div class="column" >
+                columne 2
+            </div>
+        </div>
+
+        <div class="row" >
+            row 2
+            
+            <div class="column" >
+                column 1
+            </div>
+            <div class="column" >
+                column 2
+            </div>
+        </div>
+
+
+        <hr/>
+
+        <h2>Some span , section stuff down here</h2>
+        <span>first span is here</span>
+        <span>second span is here</span>
+        <section>section tag is here </section>
+        <span>third span</span>
+        <span>fourth span</span>
+
+    </body>
+</html>

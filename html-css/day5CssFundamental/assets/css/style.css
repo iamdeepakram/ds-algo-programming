@@ -1,0 +1,65 @@
+h1{
+    color:aquamarine;
+}
+.row {
+    background-color : lightcyan;
+}
+
+/* 
+PARENT (TAG | ATTRIBUTE ) CHILDSELECTOR (TAG | ATTRIBUTE){
+
+} */
+
+li .list-item {
+    background-color: aquamarine;
+}
+
+dl dd{
+    color: blue;
+}
+
+/* SPECIFITY */
+dl dd.second-dd {
+    color: yellow;
+}
+
+/* 
+SELECTOR (TAG | ATTRIBUTE )~SIBLING SELECTOR (TAG | ATTRIBUTE){
+    will select all sibling selector
+} */
+
+.second-dd ~ dt{
+    color: burlywood;
+}
+
+dd ~ dt{
+    color: magenta;
+}
+
+dd~dt{
+    box-shadow: 5px, 5px, 30px, green;
+}
+dd+dt{
+    box-shadow: 5px, 5px, 30px, green;
+}
+
+span + span{
+    color: red;
+}
+
+
+section ~ span{
+    color: blue;
+}
+
+span ~ span {
+    color: green;
+}
+
+span {
+    text-decoration: underline;
+}
+
+#unique {
+    color: blanchedalmond;
+}
