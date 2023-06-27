@@ -1,0 +1,18 @@
+.card-1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttons {
+    background-color: rgb(62, 208, 62);
+}
+.item-content {
+    background-color: white;
+}
+.item-img{
+    background-color:rgb(62, 208, 62) ;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Flex</title>
+        <style>
+            .nav-normal {
+                border: 1px solid aqua;
+                text-align: center;
+            }
+            .normal-items {
+                display: inline;
+                border: 1px solid salmon;
+                margin-right: 10px;
+            }
+            .normal {
+                position: relative;
+                top: 50%;
+            }
+            .flex {
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .nav-flex {
+                border: 1px solid salmon;
+                margin-top: 10px;
+            }
+            .flex-items{
+                flex-shrink: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav-normal" >
+            Normal Navbar
+            <ul class="normal">
+                <li class="normal-items" >Home</li>
+                <li class="normal-items" >About</li>
+                <li class="normal-items" >Career</li>
+                <li class="normal-items" >Services</li>
+            </ul>
+        </nav>
+
+
+        <nav class="nav-flex" >
+            Navbar with Flexbox
+            <ul class="flex" >
+                <li class="flex-items" >Home</li>
+                <li class="flex-items">About</li>
+                <li class="flex-items">Career</li>
+                <li class="flex-items">Services</li>
+            </ul>
+        </nav>
+    </body>
+</html>

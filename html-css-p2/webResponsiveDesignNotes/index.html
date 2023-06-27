@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .navbar {
+                display: flex;
+                border: 1px solid black;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            .navbar ul {
+                display: flex;
+                /* Removes bullet styling from list  */
+                list-style: none; 
+
+                margin: 0;
+                /* It signifies the gap between the list elements */
+                gap: 10px;
+            }
+            /* Want button at right.  */
+            .navbar button {
+                /* button is right aligned but it is placed  */
+                /* float: right; */
+                /* Can apply justify content on parent but it is not a child property.  */
+                /* justify-content: flex-end; */
+
+                /* To apply on child we will use.  */
+                
+            }
+            .banner {
+                display: flex;
+            }
+            /* justiyf-content is a parent property not applied on child elements */
+        </style>
+
+    </head>
+    <body>
+        <section class="home-container" >
+            <nav class="navbar" >
+                <section class="logo" >Logo</section>
+                <ul>
+                    <li class="nav-items" >HOME</li>
+                    <li class="nav-items" >ABOUT</li>
+                    <li class="nav-items" >CONTACT</li>
+                </ul>
+                <button>Get Started</button>
+            </nav>
+            <article class="banner" >
+                <article class="banner-text" >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In odio neque, condimentum non porttitor id, tristique vitae ex. Cras vehicula ultricies nisi et accumsan. Mauris eros odio, gravida at ullamcorper in, ornare eu quam. Nunc consectetur massa a purus egestas, ut lacinia enim eleifend. Fusce lobortis dapibus arcu vel tristique. Vestibulum pellentesque odio sed urna bibendum hendrerit et eget nunc. Duis nec feugiat erat. Donec a volutpat erat. Aenean fermentum, erat et dictum venenatis, sapien leo vestibulum arcu, luctus facilisis nunc orci sed lorem. Mauris ligula dui, tempor sit amet enim ac, luctus sodales tellus. Nulla malesuada augue tellus, vel blandit elit blandit eu.
+                </article>
+                <img alt="Codding banner" src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg&ga=GA1.2.1866073369.1687353627&semt=sph" />
+
+            </article>
+            <footer class="footer" >
+                <p>Designed by Bear!!</p>
+            </footer>
+            
+        </section>
+    </body>
+</html>

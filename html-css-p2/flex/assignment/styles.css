@@ -1,0 +1,12 @@
+.holder{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+
+.item{
+ 
+}
