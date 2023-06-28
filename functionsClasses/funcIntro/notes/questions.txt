@@ -1,0 +1,28 @@
+Question:
+A small town is having elections, Each eligible person has a 4 digit voter id. There are 3 polling booths in the town. 
+the distribution of 
+Electricity office - [3157, 7764, 4054, 3305, 4848, 3398, 4343, 7865]
+
+
+Write a program that helps the voteers to find their polling booth. 
+
+Input: 
+One line containing an integer, denoting the voter id of a person. 
+
+Output:
+One line containing a string, denoting the polling booth name. If the voter id is not assigned to any polling boot, 
+then print "Id not found".
+
+Example:
+Input:
+6812
+
+Expected output:
+Govt High School 
+
+Example:
+Input:
+97
+
+Expected Output:
+Id not found
