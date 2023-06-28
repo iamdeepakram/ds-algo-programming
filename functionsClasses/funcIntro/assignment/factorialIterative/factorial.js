@@ -24,11 +24,12 @@ function factorial(number){
     }
     return resultFactorial;
 }
-function recursiveFactorial(number){
-    let result = number * recursiveFactorial(number -1);
-    return result;
+// function recursiveFactorial(number){
+//     if(number)
+//     let result = number * recursiveFactorial(number -1);
+//     return result;
 
-}
+// }
 
 let number = parseInt(readLine());
 
