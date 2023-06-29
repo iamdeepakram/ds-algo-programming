@@ -1,0 +1,5 @@
+4
+hello
+cat
+dog
+raining
