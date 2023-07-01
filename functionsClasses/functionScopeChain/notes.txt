@@ -1,0 +1,25 @@
+Question:
+Given aperson's age and gender, determine if they are eligible for travel concession. 
+A person is allowed concession if they are more than 60 years old.
+But, women are allowed concession if they are more than 58 years old.
+
+Input:
+First line contains a positive integer, say n, denoting the number of test cases. 
+Next n lines contain 2 space separated values each.
+- First value is an integer, denoting the age of the person.
+- Second value is one of M, F, T, denoting Male, Female and Transgender respectively. 
+
+Output:
+n lines containing one string ("Eligible" or "Not Eligible").
+
+Example:
+Input
+3 
+59 F
+29 M
+37 T 
+
+Expected output:
+Eligible 
+Not eligible
+Not eligible 
