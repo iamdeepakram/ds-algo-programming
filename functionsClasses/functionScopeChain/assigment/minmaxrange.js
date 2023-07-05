@@ -77,7 +77,9 @@ function minimumValue(inputNumbers){
 function getNumbersInRange(inputNumbers, m1, m2){
     // Please write below this line
     let rangeNumbers = [];
+    // x1 is always minimum
     let x1 = (m1 < m2)? m1: m2;
+    // x2 is always maximum 
     let x2 = (m1 > m2)? m1: m2;
 
     for(let i=0; i<inputNumbers.length; i++){
