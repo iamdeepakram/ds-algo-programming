@@ -1,0 +1,2 @@
+a d r
+"a string containing adr and other alphabets"
