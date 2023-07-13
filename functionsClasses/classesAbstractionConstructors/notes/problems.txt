@@ -1,0 +1,4 @@
+Notes:
+Abstraction:
+    Hiding the implementation details to the outside of the class
+    
