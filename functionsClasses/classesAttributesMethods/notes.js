@@ -30,34 +30,145 @@ let student2 = {
 }
 
 // but above approach is repetative for every object  
+// so we can approach it via function 
+
+function studentDetails(firstName, lastName, age, rollNumber){
+    
+// it is returning the complex data type 
+    return {
+        name : {
+            firstName: "Sanjay",
+            lastName: "Tiwari"
+        },
+        rollNumber : 184567,
+        age : 22
+    };
+}
+
+let data = studentDetails('deepak', 'arya', 22, 898943);
+console.log(data);
+
+/**What is the task of oops?
+ * 
+ */
+
+// let's create class 
+// attributes (properties) --> name, rollnumber, branch, age, gender
+// we'll define the all attributes in the constructor 
+class Student {
+    // it is like a funciton 
+    // every class have their constructor 
+    // constructor --> kind of method or function
+    // constructor() {
+    //     console.log('student constructior');
+    // }
+
+    // passing arguments to constructor 
+    constructor(name, age) {
+    // this --> when object is initialized 
+        this.name = name;
+        this.age = age;
+    }
+    // functionalities
+    // method inside student class
+    printDetails(){
+        console.log(this.name, this.age);
+    }
+}
+
+// new --> allocate memory in heap we use new operator
+// Student() is not a function it is a classs
+// this --> refers to in below case is studentA 
+let studentA = new Student('sanjay', 22);
+// studentA = {name: 'sanjay', age: 22}
+// this --> refers to in below case is studentB 
+// studentB = {name: 'john', age: 22}
+let studentB = new Student('john', 67);
+
+console.log(studentA.name, studentB.age);
+// accessing function with studentA
+studentA.printDetails();
+
+studentB.printDetails();
+
+/**
+ * Till now what we did
+ * 1. Grouping data into single entity 
+ * 2. Attaching functionallities to grouped data
+ * */ 
+
+
+
+
+/**
+ * Example for class
+ * Fruit --> properties --> (weight, color, taste, price, smell)
+ * fruits is class
+ * apple, mango, oranges 
+ * 
+ * apple --> it's an object of fruit's class
+ * apple properites --> (300 grams, red, sweet, 25, goodsmell)
+ * orange --> Properties --> (200 grams, orange, tangy, )
+ */
+
+
+
+
 
 
 
 // let's write some classes 
 
-class Rectangle {
-    constructor(height, width){
-        this.height = height;
-        this.width = width;
+// class Rectangle {
+//     constructor(height, width){
+//         this.height = height;
+//         this.width = width;
+//     }
+
+//     get area(){
+//         return this.calaArea();
+//     }
+
+//     calaArea() {
+//         return this.height*this.width;
+//     }
+//     *getSides() {
+//         yield this.height;
+
+//     }
+
+
+// }
+
+// const square = new Rectangle(10, 10);
+
+// console.log(square.area);
+
+// console.log(square.height);
+
+
+/**
+ * BP Problem Solution Approach
+ */
+
+class BPRecord {
+    constructor(systolic,  diastollic){
+        this.systolic = systolic;
+        this.diastollic = diastollic;
+
     }
 
-    get area(){
-        return this.calaArea();
+    generateReport(){
+        console.log('Blodd Pressure is '+this.systolic+'.'+this.diastollic);
+        if(this.systolic > 140 || this.diastollic >90){
+            console.log('High BP');
+        } else if (this.systolic < 90 || this.diastollic < 60){
+            console.log('Low BP');
+        } else {
+            console.log('Normal BP');
+        }
+        
     }
-
-    calaArea() {
-        return this.height*this.width;
-    }
-    *getSides() {
-        yield this.height;
-
-    }
-
-
 }
-
-const square = new Rectangle(10, 10);
-
-console.log(square.area);
-
-console.log(square.height);
+let getBPStatus = new BPRecord(145, 85);
+getBPStatus.generateReport();

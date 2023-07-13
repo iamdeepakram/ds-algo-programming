@@ -1,0 +1,31 @@
+A diagnostic center wants a software which will help them generate medical reports. 
+Before signing the contract, they want us to develop a sample software in order to convince 
+them that we will be able to build the entire application. 
+
+Implement a class callled BPRecord. It should have 2 attriutes callled systolic and diastollic. 
+It should have a method callled generateReport, which will print the following. 
+- BP value 
+- High/Low/Normal BP
+
+BP is regarded as high if systolic is greater than 140 or diastolic is greater than 90.
+BP is regarded as low if systolic is less than 90 or diastolic is less than 60.
+Otherwise BP is regarded as Normal.
+
+Example 1:
+Input:
+130
+85
+
+Output:
+Blood Pressure is 130.85
+Diagnosis: Normal BP
+
+Example 2:
+Input:
+145
+85
+
+Output:
+Blood Pressure is 145/85
+Diagnosis: High BP
+
