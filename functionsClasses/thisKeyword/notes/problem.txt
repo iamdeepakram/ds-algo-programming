@@ -1,0 +1,27 @@
+A College wants to develop a software to manage the data of students and professors.
+They have the following requirements. Help the college to design classes for their software.
+
+Student:
+- Name
+- Date of birth
+- Address
+- Phone number
+- Department
+- Programme
+- Year of joining
+- Total fees
+- Fees paid
+- A student should be able to update their address 
+- A student should be able to update their phone number 
+- A student should be able to pay fees
+
+Professor:
+- Name
+- Date of birth
+- Address
+- Phone number
+- Department
+- Year of joining
+- Qualification
+- Salary
+- A professor should be able to update their address

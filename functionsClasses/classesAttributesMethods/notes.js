@@ -115,37 +115,46 @@ studentB.printDetails();
 
 
 
-
-
 // let's write some classes 
+class Rectangle {
+    constructor(height, width){
+        this.height = height;
+        this.width = width;
+    }
 
-// class Rectangle {
-//     constructor(height, width){
-//         this.height = height;
-//         this.width = width;
-//     }
+    get area(){
+        return this.calcArea();
+    }
+    //methods
+    calcArea() {
+        return this.height*this.width;
+    }
+    *getSides() {
+        yield this.height;
 
-//     get area(){
-//         return this.calaArea();
-//     }
-
-//     calaArea() {
-//         return this.height*this.width;
-//     }
-//     *getSides() {
-//         yield this.height;
-
-//     }
+    }
 
 
-// }
-
-// const square = new Rectangle(10, 10);
-
-// console.log(square.area);
-
-// console.log(square.height);
-
+}
+// square = {
+//    height:10, 
+//    width:10, 
+//    area: function(){return this.calcarea()}, 
+//    clacArea: function(){return this.h}
+//};
+// square2 = {
+//    height:20, 
+//    width:20, 
+//    area: function(){return this.calcarea()}, 
+//    clacArea: function(){return this.h}
+//};
+let square = new Rectangle(10, 10);
+let square2 = new Rectangle(20, 20);
+console.log('---------')
+console.log(square.area);
+console.log(square.height);
+console.log(square2.width);
+console.log('---------')
 
 /**
  * BP Problem Solution Approach

@@ -1,1 +1,15 @@
+We can create objects in two ways :
+1 Object literals
+2 classes
 
+
+Example: 
+OrderDetails
+- order number : 98394LKDJFLK948394
+- item name : laptop 
+- quantity : 2
+- customer : tasdik
+- order price : 2*50000
+- payment method : 'credit card'
+- timestamp ' 4:42PM - 8- July - 2023'
+- delivery status : 'not delivered'
