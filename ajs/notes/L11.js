@@ -1,6 +1,4 @@
-/**Intro to DOM */
-
-
+/**Revision */
 // What is shallow copy?
 let simpleObj = {
     'key1':1,
@@ -53,7 +51,7 @@ anotherObj.key1 // 10
  * pass by value, pass by reference
  * mutability and immutabiliyt
  * classes
- * object
+ * object (Instance)
  * inheritance(prototype)
  * abstraction
  * encapsulation
@@ -89,3 +87,20 @@ const jodo = (a=0, b=0)=>{
     return a+b;
 }
 console.log(jodo());
+
+
+/**
+ * OBJECT (DATA TYPE)
+ * CREATE , REASSIGN, REINIT, ACCESS
+ * FOR IN
+ * DESTRUCTURING 
+ * KEYS, VALUES, ENTITIES, HASOWNPROPERTY, DEFINEPROPERTY
+ * 
+ */
+
+// var objj = {};
+// Object.defineProperty(SOURCEOBJECT, KEYNAME, {
+//     value : VALUE
+// })
+
+/**Intro to DOM */
