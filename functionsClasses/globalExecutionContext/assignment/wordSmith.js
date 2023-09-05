@@ -17,17 +17,17 @@ function readLine() {
 // by removing forbidden alphabets
 function wordSmith(forbiddenAlphabets){
     // You can start from here 
-    
     function chopWordFromString(inputString){
-        let res = '';
-       for(let i =0; i<forbiddenAlphabets.legth; i++){
-        inputString.replace(/forbiddenAlphabets[i]/g,'');
-       } 
-       return inputString;
+      let res = '';
+      for(ele of inputString){
+          if(!forbiddenAlphabets.includes(ele)){
+            res +=ele;
+          }
+      }
+       return res;
     }
 
     return chopWordFromString;
-
 
 }
 		

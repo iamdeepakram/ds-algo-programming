@@ -29,6 +29,7 @@ class addFloat extends Addition{
     super(operandOne, operandTwo);
   }
   // Override the performSum() of parent Addition Class
+  // This is known as method overriding
   performSum() {
     this.result = this.operandOne + this.operandTwo;
     
@@ -42,7 +43,11 @@ class addArray extends Addition {
   }
   // Override the performSum() of parent Addition Class
   performSum() {
-    this.result = this.operandOne.concat(this.operandTwo);
+    let result = [];
+    for(let i =0; i < this.operandOne.length; i++ ){
+      result.push(this.operandOne[i]+this.operandTwo[i]);
+    }
+    this.result = result;
   }
 }
 
