@@ -14,19 +14,29 @@ function readLine() {
 let alphabetCollection = new Map();
 let alphabetSize = 26;
 for(let i=0; i<alphabetSize; i++){
-    alphabetCollection.set(String.fromCharCode('A'.charCodeAt(0)+i), 26-i);
+    alphabetCollection.set(26-i, String.fromCharCode('A'.charCodeAt(0)+i));
 }
-console.log(alphabetCollection);
-let testCases = parseInt(readLine());
-while(testCases--){
-    
+
+let getAlphabet = (number)=>{
+    let alphabet = alphabetCollection.get(number);
+    return alphabet;
 
 }
 
-let generateAlphabet = (symbol, number)=>{
-    if(symbol =='/'){
-        return Math.trunc(number / alphabetSize);
-    } else if(symbol == '%'){
-        return Math.trunc(number%alphabetSize)
+let columnNameFromNumber = (columnNumber) => {
+    if(columnNumber<=alphabetSize){
+        return getAlphabet(columnNumber);
+    }else {
+        let str = '';
+        str+=getAlphabet(Math.floor(columnNumber/alphabetSize));
+        str+=getAlphabet(Math.floor(columnNumber%alphabetSize));
+        return str;
     }
 }
+
+let testCases = parseInt(readLine());
+while(testCases--){
+    let columnNumber = parseInt(readLine());
+    console.log(columnNameFromNumber(columnNumber));
+}
+
