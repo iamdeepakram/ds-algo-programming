@@ -104,3 +104,4 @@ console.log(jodo());
 // })
 
 /**Intro to DOM */
+// From here on look into introToDom folder 

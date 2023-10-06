@@ -1,0 +1,21 @@
+p {
+    color: red;
+}
+
+.run-time-output{
+    border : 1vh dotted black;
+    background-color: beige;
+    min-height:20vh;
+    max-width:20vh;
+}
+.run-time-output2{
+    border : 1vh dotted black;
+    background-color: beige;
+    min-height:20vh;
+    max-width:20vh;
+}
+.serial-number{
+    color: blue;
+    font-weight: bolder;
+
+}

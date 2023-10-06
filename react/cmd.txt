@@ -1,0 +1,10 @@
+npm -v
+node --version
+#Update node
+sudo npm install -g n 
+#install a new version of node
+n lts
+n latest 
+
+# remove previously installed versions 
+n prune
