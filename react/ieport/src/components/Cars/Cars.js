@@ -5,6 +5,12 @@ import Car from './Car'
 // Props Example
 class Cars extends Component{
 
+  state = {
+    name : 'Class Component state',
+    location : 'jet ski'
+  }
+
+
   constructor(props){
     console.log(props);
     // console.log(this.props);
@@ -18,8 +24,12 @@ class Cars extends Component{
   
   render(){
     console.log('Cars component is rendered with props : : ', this.props)
-
+    
     return <>
+    <span>This is from : : {this.state.name} from {this.state.location}</span>
+    <button onClick={()=>{
+      this.setState({name : 'On click Class component state', location:'someplace'});
+    }} >update state</button>
     {
       this.props.cars.map((car, index)=><div>
           <Car itemNumber = {index+1} carObj = {car} />

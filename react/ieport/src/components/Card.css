@@ -1,0 +1,30 @@
+.card-container{
+    float: left;
+    width: 100%;
+    margin: 20px, 0;
+}
+
+.card {
+    background-color: "#f2f2f2";
+    height: 300px;
+    width: 220px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px #ccc;
+    float: left;
+    margin-right: 10px;
+}
+
+.card > .card-img {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card > .card-img > img {
+    max-width: 100%;
+}

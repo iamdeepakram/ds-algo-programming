@@ -76,3 +76,5 @@ console.log(alphaArr.sort()); // [ 'a', 'c', 'm', 'p', 'y', 'z' ]
  * we can use extended sort function on integers and not on character 
  * we can use simple sort function on characters
  */
+
+
